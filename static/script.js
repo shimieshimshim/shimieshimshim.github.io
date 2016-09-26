@@ -1,13 +1,7 @@
+document.getElementById("change").onclick = function() {myFunction()};
 
-function changeContent() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("change").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "readme.md", true);
-  xhttp.send();
+function myFunction() {
+    document.getElementById("change").innerHTML = "YOU CLICKED ME!";
 }
 
 

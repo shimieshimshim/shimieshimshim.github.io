@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="static/css/index-style.css">
 		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
-		<script type="text/javascript"  src="static/assets/script.js"></script>
+		<script type="text/javascript"  src="static/script.js"></script>
 	</head>
 	<body>
 		<h2 class="sign-up"> NetID ss3656</h2>
@@ -27,7 +27,9 @@
 
 				<div class="appDescription">
 					<p>Roald Dahl believes that if you have good thoughts, they will shine out your face like sun beams and you will always look lovely. I try to live up to that. </p>
-					<button type="button" onclick="changeContent()">Change Content!</button>
+					<button type="button" onclick="changeContent()" id="change">Change Content!</button>
+
+<!-- 					<p id="change">Click me.</p> -->
 					<div class="appDescription">
 
 					</div>
@@ -46,7 +48,14 @@
 
 </script>	
 <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>	
+<script type="text/javascript">
+document.getElementById("change").onclick = function() {myFunction()};
 
+function myFunction() {
+    document.getElementById("change").innerHTML = "YOU CLICKED ME!";
+}
+
+</script>
 
 	</body>
 </html>
